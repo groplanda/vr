@@ -1,0 +1,119 @@
+@mixin placeholder($color) {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+@mixin block-select() {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+@mixin scrollbar() {
+  max-height: 100%;
+  overflow: auto;
+  margin-right: -4px;
+  margin-bottom: -20px;
+  scrollbar-color: #1d3742 $white-color;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    border-radius: 27px;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1d3742;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $white-color;
+    border-radius: 9px;
+    border: 2px solid #1d3742;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: -32px;
+    margin-bottom: -40px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: -24px;
+  }
+}
+
+@mixin sheme-point($bg, $padding) {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $white-color;
+  padding: $padding;
+  background: $bg;
+  white-space: nowrap;
+  text-align: left;
+  position: relative;
+  z-index: 4;
+  transition: background .2s ease;
+  pointer-events: all;
+}
+
+@mixin pulse-point {
+  width: 40px;
+  height: 13px;
+  display: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 6.5px);
+}
+
+@mixin sheme-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: $dark-blue-color;
+  pointer-events: none;
+  transition: background .2s ease;
+}
+
+@mixin sheme-button-ico {
+  width: 23px;
+  height: 22px;
+  color: $white-color;
+}
+
+@mixin sheme-button-text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $white-color;
+  white-space: nowrap;
+}

@@ -1,0 +1,406 @@
+.sheme {
+  width: 322px;
+  min-height: 480px;
+  position: relative;
+  padding-top: 79px;
+  display: flex;
+  margin: 0 auto;
+
+  $root: &;
+
+  &_inside {
+    margin-top: 26px;
+
+    @media (min-width: 768px) {
+      margin-top: auto;
+      margin-bottom: 66px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 417px;
+    height: 788px;
+    min-height: 788px;
+    padding-top: 148px;
+  }
+
+  &_desktop {
+    display: none;
+
+    @media (min-width: 1280px) {
+      display: flex;
+      width: 417px;
+      height: 417px;
+      min-height: 417px;
+      padding-top: 112px;
+    }
+
+    @media (min-width: 1440px) {
+      height: 517px;
+      min-height: 517px;
+    }
+  }
+
+
+  &__mine {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: none;
+
+    &_mobile {
+      width: 123px;
+      height: 466px;
+      display: block;
+      left: 76px;
+      bottom: 15px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &_tablet {
+      @media (min-width: 768px) {
+        width: 205px;
+        height: 775px;
+        display: block;
+        left: 76px;
+        bottom: 15px;
+      }
+    }
+
+    &_lg {
+      @media (min-width: 1280px) {
+        width: 158px;
+        height: 407px;
+        display: block;
+        top: 0;
+        bottom: auto;
+        left: 90px;
+      }
+      @media (min-width: 1440px) {
+        display: none;
+      }
+    }
+
+    &_full {
+      @media (min-width: 1440px) {
+        display: block;
+        width: 158px;
+        height: 504px;
+        top: 0;
+        left: 80px;
+        bottom: auto;
+      }
+    }
+
+  }
+
+  &__group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__point {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: absolute;
+
+    &.current {
+
+      #{$root} {
+        &__point-pulse {
+          display: inline-block;
+          z-index: 1;
+          animation: 2s linear 0.01s pulse infinite;
+          transform: scale(1,0.8) skew(-9deg, 2deg);
+        }
+        &__point-ico {
+          margin-right: 25px;
+          --color-path: #DF4220;
+          --color-ellipse: #DF4220;
+        }
+      }
+
+    }
+
+    &_column {
+      flex-direction: column;
+
+      #{$root} {
+        &__point-ico {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 8px;
+        }
+      }
+
+      &.current {
+
+        #{$root} {
+          &__point-ico{
+            margin-bottom: 15px;
+            margin-right: auto;
+          }
+
+          &__point-pulse {
+            top: 0;
+            left: calc(50% - 20px);
+          }
+        }
+      }
+    }
+
+    &_surface {
+      top: -2px;
+      left: 16px;
+
+      @media (min-width: 768px) {
+        top: 0;
+      }
+
+      @media (min-width: 1440px) {
+        left: 18px;
+      }
+    }
+
+    &_lift {
+      top: 58px;
+      left: 94.5px;
+
+      @media (min-width: 768px) {
+        top: 64px;
+      }
+
+      @media (min-width: 1280px) {
+        left: 109px;
+        top: 53px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 100px;
+        top: 63px;
+      }
+    }
+
+    &_crate {
+      top: 107px;
+      left: 94.5px;
+
+      @media (min-width: 768px) {
+        top: 112px;
+      }
+
+      @media (min-width: 1280px) {
+        left: 109px;
+        top: 82px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 100px;
+        top: 112px;
+      }
+
+    }
+
+    &_yard {
+      top: 155.5px;
+      left: 94.5px;
+
+      @media (min-width: 768px) {
+        top: 164px;
+      }
+
+      @media (min-width: 1280px) {
+        left: 109px;
+        top: 113px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 100px;
+        top: 161px;
+      }
+    }
+
+    &_medical {
+      top: 227px;
+      left: 176px;
+
+      @media (min-width: 768px) {
+        top: 234px;
+      }
+
+      @media (min-width: 1280px) {
+        left: 190px;
+        top: 158px;
+      }
+
+      @media (min-width: 1440px) {
+        top: 232px;
+        left: 181px;
+      }
+    }
+
+    &_conveyor {
+      top: 261px;
+      left: 176px;
+
+      @media (min-width: 768px) {
+        bottom: 284px;
+        top: auto;
+      }
+
+      @media (min-width: 1280px) {
+        left: 190px;
+        bottom: 89px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 181px;
+        bottom: 113px;
+      }
+    }
+
+    &_pdm {
+      top: 299px;
+      left: 176px;
+
+      @media (min-width: 768px) {
+        bottom: 188px;
+        top: auto;
+      }
+
+      @media (min-width: 1280px) {
+        left: 190px;
+        bottom: 60px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 181px;
+        bottom: 77px;
+      }
+    }
+
+    &_drill {
+      top: 334px;
+      left: 176px;
+
+      @media (min-width: 768px) {
+        top: auto;
+        bottom: 88px;
+      }
+
+      @media (min-width: 1280px) {
+        left: 190px;
+        bottom: 27px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 181px;
+        bottom: 40px;
+      }
+    }
+
+    &_ural {
+      top: 371px;
+      left: 176px;
+
+      @media (min-width: 768px) {
+        top: auto;
+        bottom: 2px;
+      }
+
+      @media (min-width: 1280px) {
+        left: 190px;
+        bottom: -4px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 181px;
+        bottom: 2px;
+      }
+    }
+
+    &_distribution {
+      left: 1px;
+      top: 232px;
+
+      @media (min-width: 768px) {
+        top: 236px;
+      }
+
+      @media (min-width: 1280px) {
+        top: 147px;
+        left: 16px;
+      }
+
+      @media (min-width: 1440px) {
+        top: 235px;
+        left: 5px;
+      }
+    }
+
+    &_harvester {
+      left: 15px;
+      top: 308px;
+
+      @media (min-width: 768px) {
+        top: auto;
+        bottom: 261px;
+      }
+
+      @media (min-width: 1280px) {
+        bottom: 41px;
+        left: 29px;
+
+        &.current {
+          bottom: 35px;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        bottom: 44px;
+        left: 19px;
+
+        &.current {
+          bottom: 36px;
+        }
+      }
+    }
+  }
+
+  &__point-ico {
+    width: 41px;
+    height: 14px;
+    margin-right: 8px;
+    --color-path: #FFF;
+    --color-ellipse: #2D2D2D;
+  }
+
+  &__point-pulse {
+    @include pulse-point;
+  }
+
+  &__point-button {
+    @include sheme-point(rgba(0, 0, 0, 0.4), 7px 12px);
+
+    &_sm {
+      padding: 4px 12px;
+      text-align: center;
+    }
+
+    &_popup {
+      background: rgba(3, 36, 62, 0.6);
+    }
+
+    &:hover {
+      background: $dark-blue-color-hover;
+    }
+  }
+
+}

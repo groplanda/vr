@@ -1,0 +1,306 @@
+.vr {
+  $root: &;
+
+  &__map {
+    display: none;
+
+    &_show {
+      width: 417px;
+      height: 620px;
+      position: relative;
+      padding-top: 193px;
+      display: block;
+    }
+  }
+
+  &__map-ico {
+    width: 158px;
+    height: 504px;
+    top: 81px;
+    left: 89px;
+    position: absolute;
+    display: block;
+  }
+
+  &__point {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    pointer-events: all;
+
+    &.current {
+      #{$root} {
+        &__point-label {
+          margin-right: 25px;
+        }
+        &__point-label_default {
+          display: none;
+        }
+        &__point-label_selected {
+          display: block;
+        }
+        &__point-pulse {
+          display: inline-block;
+          z-index: 1;
+          animation: 2s linear 0.01s pulse infinite;
+          transform: scale(1,0.8) skew(-9deg, 2deg);
+        }
+      }
+    }
+
+    &_return {
+      flex-direction: column;
+      width: 152px;
+      height: 41px;
+      margin-left: 18px;
+      margin-right: auto;
+      margin-bottom: 24px;
+      margin-top: 0;
+
+      #{$root} {
+        &__point-label {
+          margin-bottom: 0;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &_lift {
+      width: 229px;
+      height: 20px;
+      margin-left: 109px;
+      margin-right: auto;
+      margin-bottom: 29px;
+      margin-top: 0;
+    }
+
+    &_crate {
+      width: 115px;
+      height: 20px;
+      margin-left: 109px;
+      margin-right: auto;
+      margin-bottom: 29px;
+      margin-top: 0;
+
+      &.current {
+        margin-left: 115px;
+      }
+    }
+
+    &_yard {
+      width: 253px;
+      height: 20px;
+      margin-left: 109px;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &_distribution {
+      flex-direction: column;
+      width: 181px;
+      height: 55px;
+      margin-left: 4px;
+      margin-right: auto;
+      margin-bottom: 22px;
+      margin-top: 1px;
+
+      #{$root} {
+        &__point-label {
+          margin-right: 0;
+          margin-left: -6px;
+          margin-bottom: 8px;
+        }
+      }
+
+      &.current {
+        height: 62px;
+        margin-bottom: 15px;
+
+        #{$root} {
+          &__point-label {
+            margin-left: -8px;
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    &_harvester {
+      flex-direction: column;
+      width: 147px;
+      height: 41px;
+      margin-left: 20px;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-top: 0;
+
+      #{$root} {
+        &__point-label {
+          margin-right: 0;
+          margin-left: -6px;
+          margin-bottom: 8px;
+        }
+      }
+
+      &.current {
+        height: 48px;
+
+        #{$root} {
+          &__point-label {
+            margin-right: 0;
+            margin-left: -8px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    &_medical {
+      width: 149px;
+      height: 20px;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+
+    &_conveyor {
+      width: 215px;
+      height: 20px;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+
+    &_pdm {
+      width: 102px;
+      height: 20px;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 17px;
+      margin-top: 0;
+    }
+
+    &_drill {
+      width: 226px;
+      height: 20px;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+
+    &_ural {
+      width: 182px;
+      height: 20px;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &:hover {
+      #{$root} {
+        &__point-text {
+          background: $dark-blue-color;
+          animation: zoom 4s ease infinite;
+        }
+      }
+    }
+
+  }
+
+  &__point-label {
+    margin-right: 8px;
+    pointer-events: none;
+
+    &_selected {
+      display: none;
+    }
+  }
+
+  &__point-pulse {
+    width: 40px;
+    height: 13px;
+    display: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 6.5px);
+  }
+
+  &__point-text {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $white-color;
+    padding: 4px 12px;
+    background: rgba(3, 36, 62, 0.6);
+    white-space: nowrap;
+    text-align: left;
+    position: relative;
+    z-index: 4;
+    transition: background .2s ease;
+    pointer-events: all;
+  }
+
+  &__map-bottom {
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__map-col:first-child {
+    width: 190px;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      #{$root} {
+        &__toggle-circle {
+          background: $dark-blue-color-hover;
+        }
+      }
+    }
+
+  }
+
+  &__toggle-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin-right: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $dark-blue-color;
+    pointer-events: none;
+    transition: background .2s ease;
+  }
+
+  &__toggle-ico {
+    width: 23px;
+    height: 22px;
+    color: $white-color;
+  }
+
+  &__toggle-text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $white-color;
+    white-space: nowrap;
+  }
+
+}

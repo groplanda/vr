@@ -1,0 +1,24 @@
+<svg viewBox="0 0 72 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="36" cy="135.5" rx="5" ry="1.5" fill="black" />
+  <!-- <rect
+    x="35.9814"
+    y="6.32849"
+    width="40"
+    height="40"
+    transform="rotate(45 35.9814 6.32849)"
+    fill="#181818"
+    class="rect"
+  />
+  <rect
+    x="35.9792"
+    y="0.707107"
+    width="49.2083"
+    height="49"
+    transform="rotate(45 35.9792 0.707107)"
+    stroke="black"
+    class="rect"
+  /> -->
+
+  <path d="M36 70V135.5" stroke="#000"/>
+</svg>
+

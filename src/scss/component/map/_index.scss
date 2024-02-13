@@ -1,0 +1,654 @@
+.map {
+  position: relative;
+  margin: 0 -16px;
+
+  $root: &;
+
+  @media(min-width: 768px) {
+    margin: 0 -32px;
+    height: 461px;
+  }
+
+  @media(min-width: 1280px) {
+    max-width: 698px;
+    height: 347px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: 1440px) {
+    max-width: 1090px;
+    height: 543px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+    transform: scale(.8);
+    height: 390px;
+    transform-origin: 50% 0;
+ }
+
+  @media screen and (min-width: 1024px) and (max-width: 1201px) and (max-height: 600px) {
+    transform: scale(.75);
+    height: 390px;
+    transform-origin: 50% 0;
+  }
+
+  @media screen and (min-width: 1440px ) and (max-width: 1599px) {
+    transform: scale(.7);
+    transform-origin: 50% 0;
+  }
+
+  @media screen and (min-width: 1600px) and (max-height: 814px) {
+    transform-origin: 50% 0;
+    transform: scale(.65);
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1699px) and (min-height: 815px) and (max-height: 900px) {
+    transform-origin: 50% 0;
+    transform: scale(.78);
+  }
+
+  @media screen and (min-width: 1700px) and (min-height: 815px) and (max-height: 839px) {
+    transform-origin: 50% 0;
+    transform: scale(.78);
+  }
+
+  @media screen and (min-width: 1700px) and (max-width: 1799px) and (min-height: 840px) and (max-height: 900px) {
+    transform-origin: 50% 0;
+    transform: scale(.83);
+  }
+
+  @media screen and (min-width: 1800px) and (min-height: 900px) and (max-height: 959px) {
+    transform-origin: 50% 0;
+    transform: scale(.9);
+  }
+
+  &__image {
+    max-width: 319px;
+    display: block;
+    margin: 0 auto;
+
+    @media(min-width: 768px) {
+      height: 100%;
+      left: 100%;
+      max-width: none;
+      top: 0;
+      left: 50%;
+      width: auto;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  }
+
+  &__mobile {
+    margin: 0 auto;
+    max-width: 319px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
+    @media(min-width: 768px) {
+      max-width: none;
+      width: 929px;
+      height: 461px;
+    }
+
+    @media(min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__group {
+    display: none;
+
+    @media(min-width: 1280px) {
+      display: block;
+      position: absolute;
+      width: 607px;
+      height: 479px;
+      left: 86px;
+      top: -82px;
+      z-index: 1;
+    }
+
+    @media(min-width: 1440px) {
+      left: 219px;
+      top: -15px;
+      width: 824px;
+      height: 647px;
+    }
+  }
+
+  &__item {
+    position: absolute;
+
+    &_default {
+      #{$root} {
+        &__square {
+          bottom: 0;
+          left: 0;
+        }
+
+        &__point {
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+
+    &_reverse {
+      #{$root} {
+        &__square {
+          top: 0;
+          right: 0;
+        }
+
+        &__point {
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+
+    &_harvester {
+      width: 197px;
+      height: 196px;
+      left: 88px;
+      top: 0;
+
+      @media(min-width: 1440px) {
+        left: 63px;
+        width: 201px;
+        height: 203px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 20px;
+          bottom: 15px;
+
+          @media(min-width: 1440px) {
+            bottom: 14px;
+            left: 15px;
+          }
+        }
+      }
+
+    }
+
+    &_lift {
+      left: 216px;
+      top: 60px;
+      width: 141px;
+      height: 127px;
+
+      @media(min-width: 1440px) {
+        top: 50px;
+        left: 257px;
+        width: 120px;
+        height: 119px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 19px;
+          bottom: 8px;
+
+          @media(min-width: 1440px) {
+            left: 12px;
+            bottom: 12px;
+          }
+        }
+      }
+    }
+
+    &_distribution {
+      left: 192px;
+      top: 91px;
+      width: 196px;
+      height: 204px;
+
+      @media(min-width: 1440px) {
+        width: 235px;
+        height: 233px;
+        top: 110px;
+        left: 205px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 15px;
+          bottom: 20px;
+        }
+      }
+
+    }
+
+    &_yard {
+      left: 216px;
+      top: 122px;
+      width: 204px;
+      height: 198px;
+
+      @media(min-width: 1440px) {
+        width: 225px;
+        height: 224px;
+        top: 154px;
+        left: 257px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 14px;
+          bottom: 14px;
+
+          @media(min-width: 1440px) {
+
+          }
+        }
+      }
+    }
+
+    &_conveyor {
+      left: 274px;
+      top: 155px;
+      width: 181px;
+      height: 150px;
+
+      @media(min-width: 1440px) {
+        width: 181px;
+        height: 161px;
+        top: 199px;
+        left: 346px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 15px;
+          bottom: 12px;
+
+          @media(min-width: 1440px) {
+
+          }
+        }
+      }
+    }
+
+    &_pdm {
+      right: 0;
+      top: 195px;
+      width: 164px;
+      height: 160px;
+
+      @media(min-width: 1440px) {
+        width: 220px;
+        height: 239px;
+        top: 204px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 10px;
+          bottom: 16px;
+
+          @media(min-width: 1440px) {
+            bottom: 12px;
+          }
+        }
+      }
+    }
+
+    &_drill {
+      right: 0;
+      top: 249px;
+      width: 112px;
+      height: 106px;
+
+      @media(min-width: 1440px) {
+        width: 155px;
+        height: 156px;
+        top: 276px;
+      }
+
+      #{$root} {
+
+        &__line {
+          left: 14px;
+          bottom: 14px;
+
+          @media(min-width: 1440px) {
+
+          }
+        }
+      }
+    }
+
+    &_ural {
+      right: 109px;
+      bottom: 8px;
+      width: 119px;
+      height: 106px;
+
+      @media(min-width: 1440px) {
+        width: 198px;
+        height: 200px;
+        bottom: 0;
+        right: 130px;
+      }
+
+      #{$root} {
+
+        &__line {
+          top: 14px;
+          right: 14px;
+        }
+      }
+    }
+
+    &_crate {
+      left: 3px;
+      bottom: 5px;
+      width: 231px;
+      height: 200px;
+
+      @media(min-width: 1440px) {
+        width: 259px;
+        height: 273px;
+        left: 16px;
+        bottom: 42px;
+      }
+
+      #{$root} {
+
+        &__line {
+          top: 15px;
+          right: 15px;
+
+          @media(min-width: 1440px) {
+            right: 12px;
+            top: 13px;
+          }
+
+        }
+      }
+    }
+
+    &_medical {
+      left: 3px;
+      bottom: 61px;
+      width: 149px;
+      height: 132px;
+
+      @media(min-width: 1440px) {
+        width: 175px;
+        height: 171px;
+        left: 16px;
+        bottom: 111px;
+      }
+
+      #{$root} {
+
+        &__line {
+          top: 13px;
+          right: 13px;
+
+          @media(min-width: 1440px) {
+
+          }
+        }
+      }
+    }
+  }
+
+  &__square {
+    width: 9px;
+    height: 9px;
+    background: #FDC500;
+    border: 1px solid #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+
+    @media(min-width: 768px) {
+      width: 18px;
+      height: 18px;
+      border-width: 2px;
+    }
+
+    &_harvester {
+      top: 55px;
+      left: 78px;
+
+      @media(min-width: 768px) {
+        top: 149px;
+        left: 236px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 267px;
+        top: 122px;
+      }
+    }
+
+    &_lift {
+      top: 42px;
+      left: 151px;
+
+      @media(min-width: 768px) {
+        top: 105px;
+        left: 404px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 411px;
+        top: 96px;
+      }
+    }
+
+    &_yard {
+      top: 117px;
+      left: 151px;
+
+      @media(min-width: 768px) {
+        top: 286px;
+        left: 404px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        top: 240px;
+        left: 411px;
+      }
+    }
+
+    &_crate {
+      top: 100px;
+      left: 151px;
+
+      @media(min-width: 768px) {
+        top: 249px;
+        left: 404px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        top: 205px;
+        left: 411px;
+      }
+    }
+
+    &_medical {
+      top: 117px;
+      left: 102px;
+
+      @media(min-width: 768px) {
+        top: 293px;
+        left: 323px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 342px;
+        top: 247px;
+      }
+    }
+
+    &_distribution {
+      top: 123px;
+      left: 134px;
+
+      @media(min-width: 768px) {
+        top: 255px;
+        left: 349px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 368px;
+        top: 211px;
+      }
+    }
+
+    &_conveyor {
+      top: 113px;
+      left: 192px;
+
+      @media(min-width: 768px) {
+        top: 268px;
+        left: 492px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 488px;
+        top: 226px;
+      }
+    }
+
+    &_pdm {
+      top: 125px;
+      left: 237px;
+
+      @media(min-width: 768px) {
+        top: 341px;
+        left: 691px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 656px;
+        top: 285px;
+      }
+    }
+
+    &_drill {
+      top: 125px;
+      left: 265px;
+
+      @media(min-width: 768px) {
+        top: 350px;
+        left: 766px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 728px;
+        top: 287px;
+      }
+    }
+
+    &_ural {
+      top: 144px;
+      left: 275px;
+
+      @media(min-width: 768px) {
+        top: 385px;
+        left: 753px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) and (max-height: 880px) {
+        left: 703px;
+        top: 329px;
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+    pointer-events: none;
+
+    &_full {
+      display: none;
+    }
+
+    @media(min-width: 1440px) {
+      display: none;
+
+      &_full {
+        display: block;
+      }
+    }
+  }
+
+  &__point {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+  }
+
+  &__point-label {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="32.4263" y="10" width="31.7157" height="31.7157" transform="rotate(45 32.4263 10)" fill="white"/><rect x="32.5" y="0.707107" width="45.6687" height="44.9619" transform="rotate(45 32.5 0.707107)" stroke="white"/></svg>');
+    background-repeat: no-repeat;
+
+    @media(min-width: 1440px) {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &__point-value {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-blue-color;
+    pointer-events: none;
+
+    @media(min-width: 1440px) {
+      font-size: 20px;
+    }
+  }
+
+  &__point-content {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: $white-color;
+    position: absolute;
+    left: 100%;
+    top: calc(50% - 8px);
+    margin-left: 9px;
+    white-space: nowrap;
+
+    &_drill {
+      @media(min-width: 1440px) {
+        white-space: normal;
+        top: calc(50% - 18px);
+      }
+    }
+  }
+}

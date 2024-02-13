@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head></head>
+<body>
+
+  <noindex>
+  <div class="section preloader" id="preloader">
+    <div class="wrap page__wrap">
+      <div class="page__container page__container_center">
+
+        <div class="page__loading">
+
+          <div class="page__loading-group">
+            <svg class="page__trolley-ico" name="Загрузка...">
+              <use xlink:href="spritemap.svg#sprite-trolley"></use>
+            </svg>
+            <div class="page__loading-rail">
+              <div class="page__rail-bg"></div>
+            </div>
+          </div>
+
+          <div class="page__title page__title_loading">Идет загрузка сайта</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="section preloader preloader_hide" id="placeholder">
+    <div class="preloader__content">
+      <p class="preloader__title">Пожалуйста, поверните телефон.</p>
+    </div>
+  </div>
+  </noindex>
+
+  <div class="app" data-js="fullpage">
+    <div class="section intro intro_main" data-anchor="intro" data-menuanchor="intro">
+      <div class="wrap intro__wrap">
+        <div class="intro__container">
+
+          <div class="intro__logo">
+            <div class="intro__logo-group">
+              <picture>
+                <source srcset="/images/logo.svg">
+                <img src="/images/logo.svg" alt="еврохим" class="intro__logo-src" />
+              </picture>
+            </div>
+            <div class="intro__logo-description">ЕвроХим-ВолгаКалий</div>
+            <div class="intro__logo-bottom"></div>
+          </div>
+
+          <div class="intro__group">
+            <div class="intro__logo-group intro__logo-group_mobile">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/images/logo-mobile.svg">
+                <source media="(min-width: 768px)" srcset="/images/logo.svg">
+                <img src="/images/logo-mobile.svg" alt="еврохим" class="intro__logo-src" />
+              </picture>
+            </div>
+            <h1 class="intro__title">
+              Подземный комплекс
+              Гремячинского горно-обогатительного комбината
+            </h1>
+            <div class="intro__scroll">
+              <div class="intro__scroll-name">листайте вниз</div>
+              <div class="intro__scroll-group">
+                <div class="intro__scroll-line"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="section intro intro_about" data-anchor="info" data-menuanchor="info">
+      <div class="wrap page__wrap">
+        <div class="page__container page__container_center">
+
+          <div class="page__about">
+            <p class="page__about-description">
+              «ЕвроХим-ВолгаКалий» разрабатывает одно из самых крупных месторождений калийной руды в России.
+            </p>
+            <p class="page__about-description">
+              Мощность рудного тела – 2,30 – 21,46 м, глубина залегания – от 1004 до 1295 м.
+            </p>
+            <p class="page__about-description">
+              Запасы месторождения, утвержденные ГКЗ Роснедра, составляют 1 613 768 тыс. тонн.
+            </p>
+            <p class="page__about-description">
+              Этого объема достаточно для более чем 40 лет работы предприятия.
+            </p>
+            <p class="page__about-description">
+              По состоянию на июнь 2022 года общая протяженность выработок рудника превышает 40 км.
+            </p>
+
+          </div>
+
+          <div class="page__logo-group">
+            <picture>
+              <source srcset="/images/logo.svg">
+              <img src="/images/logo.svg" alt="еврохим" class="page__logo-src" />
+            </picture>
+          </div>
+
+          <div class="intro__scroll">
+            <div class="intro__scroll-name">листайте вниз</div>
+            <div class="intro__scroll-group">
+              <div class="intro__scroll-line"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="section page page_select" data-anchor="select" data-menuanchor="select">
+      <div class="wrap page__wrap">
+        <div class="page__container">
+
+          <div class="page__content">
+            <div class="page__title page__title_start">Нажмите на кнопку <br>«Старт»</div>
+            <div class="page__title page__title_select">Выберите куда хотите отправиться</div>
+            <svg class="page__content-ico">
+              <use xlink:href="spritemap.svg#sprite-360"></use>
+            </svg>
+            <p class="page__description page__description_content">
+              Запускает интерактивный веб-просмотр
+              на 360° прямо в браузере. Гарнитуры виртуальной реальности поддерживаются автоматически.
+            </p>
+          </div>
+
+          <div class="page__group">
+            <div class="map">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/images/map/map-mobile-min.png">
+                <source media="(min-width: 768px)" srcset="/images/map/map-full-min.png">
+                <img src="/images/map/map-mobile-min.png" alt="еврохим" class="map__image" data-js="map" />
+              </picture>
+
+              <div class="map__mobile">
+                <div class="map__square map__square_harvester"></div>
+                <div class="map__square map__square_lift"></div>
+                <div class="map__square map__square_yard"></div>
+                <div class="map__square map__square_crate"></div>
+                <div class="map__square map__square_medical"></div>
+                <div class="map__square map__square_distribution"></div>
+                <div class="map__square map__square_conveyor"></div>
+                <div class="map__square map__square_pdm"></div>
+                <div class="map__square map__square_drill"></div>
+                <div class="map__square map__square_ural"></div>
+
+              </div>
+
+              <div class="map__group" data-js="scheme-map">
+
+                <!-- harvester start -->
+                <div class="map__item map__item_harvester map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="harvester"></div>
+
+                  <svg class="map__line" width="147" height="149" viewBox="0 0 147 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M146.502 0.499925C113.216 34.9493 33.787 113.551 0.501254 148" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="142" height="144" viewBox="0 0 142 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M141.5 1.00006C108.214 35.4495 33.7857 109.051 0.499997 143.5" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="harvester">
+                      <div class="map__point-value">10</div>
+                    </div>
+                    <div class="map__point-content">
+                      Комбайн КП 330
+                    </div>
+                  </div>
+                </div>
+                <!-- harvester end -->
+
+                <!-- lift start -->
+                <div class="map__item map__item_lift map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="lift"></div>
+
+                  <svg class="map__line" width="95" height="96" viewBox="0 0 95 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M94.0039 1.21533C60.6624 34.6989 33.6122 61.7468 0.499996 95" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M60.5 0.5C28 33 33.2765 27.2235 0.999998 59.5" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="lift">
+                      <div class="map__point-value">1</div>
+                    </div>
+                    <div class="map__point-content">
+                      Подъемная машина
+                    </div>
+                  </div>
+                </div>
+                <!-- lift end -->
+
+                <!-- distribution start -->
+                <div class="map__item map__item_distribution map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="distribution"></div>
+
+                  <svg class="map__line" width="165" height="154" viewBox="0 0 165 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M164.5 0.676086C164.5 0.676086 9.59988 143.51 0.500003 153" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="177" height="175" viewBox="0 0 177 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M176.5 1C176.5 1 11.3576 161.955 0.670598 174" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="distribution">
+                      <div class="map__point-value">9</div>
+                    </div>
+                    <div class="map__point-content">
+                      Распределительная подстанция
+                    </div>
+                  </div>
+                </div>
+                <!-- distribution end -->
+
+                <!-- yard start -->
+                <div class="map__item map__item_yard map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="yard"></div>
+
+                  <svg class="map__line" width="155" height="140" viewBox="0 0 155 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M154.5 0.500244C154.5 0.500244 10.0999 130.01 0.999999 139.5" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="168" height="163" viewBox="0 0 168 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M166.705 1.13328C78.1121 84.8489 89.0929 78.4427 0.499922 162.158" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="yard">
+                      <div class="map__point-value">3</div>
+                    </div>
+                    <div class="map__point-content">
+                      Околоствольный двор
+                    </div>
+                  </div>
+                </div>
+                <!-- yard end -->
+
+                <!-- yard start -->
+                <div class="map__item map__item_conveyor map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="conveyor"></div>
+
+                  <svg class="map__line" width="136" height="118" viewBox="0 0 136 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M135 1.00018C135 1.00018 84 45.5001 0.500195 117.5" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="110" height="111" viewBox="0 0 110 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M109 0.5C53.6378 57.3974 56.5688 53.3958 1.20653 110.293" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="conveyor">
+                      <div class="map__point-value">5</div>
+                    </div>
+                    <div class="map__point-content">
+                      Конвейерная лента
+                    </div>
+                  </div>
+                </div>
+                <!-- yard end -->
+
+                <!-- yard start -->
+                <div class="map__item map__item_pdm map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="pdm"></div>
+
+                  <svg class="map__line" width="136" height="118" viewBox="0 0 136 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M135 1.00018C135 1.00018 84 45.5001 0.500195 117.5" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="172" height="169" viewBox="0 0 172 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M171 0.500052C171 1.50001 51.9981 117.002 0.500125 168.5" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="pdm">
+                      <div class="map__point-value">6</div>
+                    </div>
+                    <div class="map__point-content">
+                      ПДМ
+                    </div>
+                  </div>
+                </div>
+                <!-- yard end -->
+
+                <!-- drill start -->
+                <div class="map__item map__item_drill map__item_default">
+                  <div class="map__square" data-js="scheme-point" data-name="drill"></div>
+
+                  <svg class="map__line" width="65" height="56" viewBox="0 0 65 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M64.1752 0.999986C12.2809 46.8136 52.3942 9.1578 0.5 54.9715" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="95" height="96" viewBox="0 0 95 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M94 0.5C92.8699 1.68878 59.1928 34.378 1 95.5" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="drill">
+                      <div class="map__point-value">7</div>
+                    </div>
+                    <div class="map__point-content">
+                      Буровая установка
+                    </div>
+                  </div>
+                </div>
+                <!-- drill end -->
+
+                <!-- ural start -->
+                <div class="map__item map__item_ural map__item_reverse">
+                  <div class="map__square" data-js="scheme-point" data-name="ural"></div>
+
+                  <svg class="map__line" width="69" height="61" viewBox="0 0 69 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68.0797 1.17563C16.1855 46.9893 52.8943 14.6863 1.00009 60.5" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="139" height="136" viewBox="0 0 139 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999991 135.5C1.0001 134.5 87.0021 52.4982 138.5 0.999997" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="ural">
+                      <div class="map__point-value">8</div>
+                    </div>
+                    <div class="map__point-content">
+                      Комбайн «Урал»
+                    </div>
+                  </div>
+                </div>
+                <!-- ural end -->
+
+                <!-- crate start -->
+                <div class="map__item map__item_crate map__item_reverse">
+                  <div class="map__square" data-js="scheme-point" data-name="crate"></div>
+
+                  <svg class="map__line" width="177" height="156" viewBox="0 0 177 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M175.981 1.1755C105.041 63.6765 71.9393 92.499 1 155" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="209" height="206" viewBox="0 0 209 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 205C67.1228 140.408 141.877 65.092 208 0.500244" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="crate">
+                      <div class="map__point-value">2</div>
+                    </div>
+                    <div class="map__point-content">
+                      Клеть
+                    </div>
+                  </div>
+                </div>
+                <!-- crate end -->
+
+                <!-- crate start -->
+                <div class="map__item map__item_medical map__item_reverse">
+                  <div class="map__square" data-js="scheme-point" data-name="medical"></div>
+
+                  <svg class="map__line" width="98" height="84" viewBox="0 0 98 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M96.9986 0.931794C50.2124 42.2698 47.7318 42.0476 0.945565 83.3856" stroke="#181818"/>
+                  </svg>
+
+                  <svg class="map__line map__line_full" width="115" height="112" viewBox="0 0 115 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 111C36.4237 74.6231 78.0762 37.3769 114 1.00002" stroke="#181818"/>
+                  </svg>
+
+                  <div class="map__point">
+                    <div class="map__point-label" data-js="scheme-point" data-name="medical">
+                      <div class="map__point-value">4</div>
+                    </div>
+                    <div class="map__point-content">
+                      Медпункт
+                    </div>
+                  </div>
+                </div>
+                <!-- crate end -->
+
+              </div>
+
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="button button_blue page__start"
+            data-js-action="open-modal"
+            data-name="sheme"
+          >
+            Старт
+          </button>
+
+          <div class="page__logo-group">
+            <picture>
+              <source srcset="/images/logo.svg">
+              <img src="/images/logo.svg" alt="еврохим" class="page__logo-src" />
+            </picture>
+          </div>
+
+          <div class="page__depth">
+            Подземный комплекс располагается на глубине 1150 метров.
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="section hidden page page_loading" id="loading" data-anchor="loading" data-menuanchor="loading">
+      <div class="wrap page__wrap">
+        <div class="page__container page__container_center">
+
+          <div class="page__loading">
+
+            <div class="page__loading-group">
+              <svg class="page__trolley-ico" name="Загрузка...">
+                <use xlink:href="spritemap.svg#sprite-trolley"></use>
+              </svg>
+              <div class="page__loading-rail">
+                <div class="page__rail-bg"></div>
+              </div>
+            </div>
+
+            <h2 class="page__title page__title_loading">Идет загрузка сайта</h2>
+            <p class="page__description page__description_loading">
+              Пожалуйста, подождите, мы загружаем виртуальный тур. Это может занять некоторое время.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls" data-js="controls">
+    <div class="controls__group controls__group_logo">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/images/logo-mobile.svg">
+        <source media="(min-width: 768px)" srcset="/images/logo.svg">
+        <img src="/images/logo-mobile.svg" alt="еврохим" class="intro__logo-src" />
+      </picture>
+    </div>
+    <div class="controls__group controls__group_top">
+      <button
+        data-js-action="open-modal"
+        data-name="back"
+        type="button"
+        class="controls__button controls__button_return button">
+        <svg class="controls__button-lift controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-map"></use>
+        </svg>
+        вернуться к карте
+      </button>
+      <button
+        data-js-action="open-modal"
+        data-name="return"
+        type="button"
+        class="controls__button controls__button_return button">
+        <svg class="controls__button-lift controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-lift"></use>
+        </svg>
+        вернуться на поверхность
+      </button>
+      <button
+        data-js-action="open-modal"
+        data-name="help"
+        type="button"
+        class="controls__button controls__button_help button">
+        <svg class="controls__button-help controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-help"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="controls__group controls__group_right">
+      <button
+        data-js-action="open-modal"
+        data-name="info"
+        type="button"
+        class="controls__button controls__button_plus button">
+        <svg class="controls__button-plus controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-plus"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="controls__group controls__group_bottom">
+      <button type="button" class="controls__button controls__button_vr button" data-js-action="toggle-vr">
+        <svg class="controls__button-vr controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-vr"></use>
+        </svg>
+      </button>
+      <button type="button" class="controls__button controls__button_full button">
+        <svg class="controls__button-full controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-full"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="controls__group controls__group_left">
+      <button
+        data-js-action="open-modal"
+        data-name="sheme-inside"
+        type="button"
+        class="controls__button controls__button_map button">
+        <svg class="controls__button-map controls__button-ico">
+          <use xlink:href="spritemap.svg#sprite-map"></use>
+        </svg>
+        Показать карту
+      </button>
+      <div class="controls__sheme">
+        <button type="button" class="controls__toggle" data-js="toggle-sheme">
+          <span class="controls__toggle-circle">
+            <svg class="controls__toggle-ico">
+              <use xlink:href="spritemap.svg#sprite-map"></use>
+            </svg>
+          </span>
+          <span class="controls__toggle-text" data-js="toggle-sheme-text">
+            скрыть карту
+          </span>
+        </button>
+        <div class="controls__sheme-group">
+
+          <div class="sheme sheme_desktop">
+            <svg class="sheme__mine sheme__mine_lg">
+              <use xlink:href="spritemap.svg#sprite-mine-lg"></use>
+            </svg>
+            <svg class="sheme__mine sheme__mine_full">
+              <use xlink:href="spritemap.svg#sprite-mine-full"></use>
+            </svg>
+
+            <div class="sheme__group" data-js="scheme-map" data-type="desktop">
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_column sheme__point_surface">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point-default"></use>
+                </svg>
+                <button
+                  data-js-action="open-modal"
+                  data-name="return"
+                  class="sheme__point-button">
+                  На поверхность
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_lift" data-js="scheme-group" data-index="1">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="1"
+                  data-name="lift"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  подъемная машина
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_crate" data-js="scheme-group" data-index="2">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="2"
+                  data-name="crate"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  клеть
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_yard" data-js="scheme-group" data-index="3">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="3"
+                  data-name="yard"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  околоствольный двор
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_medical" data-js="scheme-group" data-index="4">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="4"
+                  data-name="medical"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  медпункт
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_conveyor" data-js="scheme-group" data-index="5">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="5"
+                  data-name="conveyor"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  конвейерная лента
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_pdm" data-js="scheme-group" data-index="6">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="6"
+                  data-name="pdm"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  ПДМ
+                </button>
+              </div>
+              <!-- point end -->
+
+               <!-- point start -->
+               <div class="sheme__point sheme__point_drill" data-js="scheme-group" data-index="7">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="7"
+                  data-name="drill"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  буровая установка
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_ural" data-js="scheme-group" data-index="8">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="8"
+                  data-name="ural"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  комбайн урал
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_distribution sheme__point_column" data-js="scheme-group" data-index="9">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="9"
+                  data-name="distribution"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm">
+                  Распределительная <br>подстанция
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_harvester sheme__point_column" data-js="scheme-group" data-index="10">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="10"
+                  data-name="harvester"
+                  data-js="scheme-point"
+                  class="sheme__point-button">
+                  Комбайн КП 330
+                </button>
+              </div>
+              <!-- point end -->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="controls__group controls__group_center" data-js="controls-center">
+      <button type="button" class="controls__button controls__button_navigation button">
+        Нажмите и удерживайте для навигации
+        <svg class="controls__button-controls controls__navigation">
+          <use xlink:href="spritemap.svg#sprite-controls"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup" id="vr-popup">
+    <div class="popup__dialog" data-role="close-modal">
+      <div class="popup__content" data-modal="sheme">
+        <button type="button" class="popup__close" data-role="close-modal">
+          <svg class="popup__cross">
+            <use xlink:href="spritemap.svg#sprite-cross"></use>
+          </svg>
+        </button>
+
+        <div class="popup__wrap">
+          <div class="popup__title">Выберите, куда хотите отправиться</div>
+
+          <div class="sheme">
+            <svg class="sheme__mine sheme__mine_mobile">
+              <use xlink:href="spritemap.svg#sprite-mine-mobile-start"></use>
+            </svg>
+            <svg class="sheme__mine sheme__mine_tablet">
+              <use xlink:href="spritemap.svg#sprite-mine-tablet-start"></use>
+            </svg>
+
+            <div class="sheme__group" data-js="scheme-map">
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_lift" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="1"
+                  data-name="lift"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  подъемная машина
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_crate" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="2"
+                  data-name="crate"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  клеть
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_yard" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="3"
+                  data-name="yard"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  околоствольный двор
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_medical" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="4"
+                  data-name="medical"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  медпункт
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_conveyor" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="5"
+                  data-name="conveyor"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  конвейерная <br>лента
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_pdm" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="6"
+                  data-name="pdm"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  ПДМ
+                </button>
+              </div>
+              <!-- point end -->
+
+               <!-- point start -->
+               <div class="sheme__point sheme__point_drill" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="7"
+                  data-name="drill"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  буровая <br>установка
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_ural" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="8"
+                  data-name="ural"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  комбайн <br>урал
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_distribution sheme__point_column" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="9"
+                  data-name="distribution"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  Распределительная <br>подстанция
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_harvester sheme__point_column" data-js="scheme-group">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <button
+                  data-index="10"
+                  data-name="harvester"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  Комбайн КП 330
+                </button>
+              </div>
+              <!-- point end -->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="popup__content popup__content_center" data-modal="help">
+        <button type="button" class="popup__close" data-role="close-modal">
+          <svg class="popup__cross">
+            <use xlink:href="spritemap.svg#sprite-cross"></use>
+          </svg>
+        </button>
+
+        <div class="popup__wrap">
+          <div class="popup__title popup__title_offset">Помощь</div>
+
+          <div class="popup__help">
+            <div class="popup__help-item">
+              <svg class="popup__help-view">
+                <use xlink:href="spritemap.svg#sprite-360"></use>
+              </svg>
+              <p class="popup__help-descr popup__mobile">
+                Виртуальный тур на 360°. Предлагаем вам осмотреться вокруг, передвигая ваше устройство.
+              </p>
+              <p class="popup__help-descr popup__desktop">
+                Виртуальный тур на 360°. Предлагаем вам осмотреться вокруг, щелкая и перетаскивая мышь.
+              </p>
+            </div>
+            <div class="popup__help-item">
+              <svg class="popup__help-map">
+                <use xlink:href="spritemap.svg#sprite-map"></use>
+              </svg>
+              <p class="popup__help-descr popup__mobile">
+                Нажмите на данную кнопку, чтобы открылась карта. С ее помощью вы сможете перемещаться по объектам рудника
+              </p>
+              <p class="popup__help-descr popup__desktop">
+                Карта шахты доступна в левой части экрана. С помощью нее можно перемещаться по объектам рудника.
+              </p>
+            </div>
+            <div class="popup__help-item">
+              <div class="popup__help-circle">
+                <svg class="popup__help-plus">
+                  <use xlink:href="spritemap.svg#sprite-plus"></use>
+                </svg>
+              </div>
+              <p class="popup__help-descr">
+                Если на странице доступна эта кнопка, то, нажав не нее, можно ознакомиться с описанием локации
+              </p>
+            </div>
+          </div>
+
+          <div class="popup__footer">
+            <button
+            type="button"
+            class="button button_blue popup__button"
+            data-role="close-modal"
+            >
+              Поехали
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="popup__content popup__content_center" data-modal="return">
+        <button type="button" class="popup__close" data-role="close-modal">
+          <svg class="popup__cross">
+            <use xlink:href="spritemap.svg#sprite-cross"></use>
+          </svg>
+        </button>
+
+        <div class="popup__wrap">
+          <div class="popup__title popup__title_offset">
+            Вы уверены, что хотите вернуться на поверхность?
+          </div>
+
+          <div class="popup__footer">
+            <a
+              href="https://gremgok.ru/"
+              rel="noopener noreferrer"
+              class="button button_blue popup__button"
+            >
+              Да, вернуться на поверхность
+          </a>
+
+            <button
+              type="button"
+              class="button button_white popup__button"
+              data-role="close-modal"
+            >
+              Нет, остаться в шахте
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="popup__content popup__content_info" data-modal="info">
+        <button type="button" class="popup__close" data-role="close-modal">
+          <svg class="popup__cross">
+            <use xlink:href="spritemap.svg#sprite-cross"></use>
+          </svg>
+        </button>
+        <div class="popup__wrap">
+          <div class="popup__title popup__title_offset" data-js-modal="title">
+            Клеть
+          </div>
+
+          <div class="popup__wrap-scroll">
+            <div class="popup__body" data-js-modal="info"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="popup__content" data-modal="sheme-inside">
+        <button type="button" class="popup__close" data-role="close-modal">
+          <svg class="popup__cross">
+            <use xlink:href="spritemap.svg#sprite-cross"></use>
+          </svg>
+        </button>
+
+        <div class="popup__wrap">
+
+          <div class="sheme sheme_inside">
+            <svg class="sheme__mine sheme__mine_mobile">
+              <use xlink:href="spritemap.svg#sprite-mine-mobile"></use>
+            </svg>
+            <svg class="sheme__mine sheme__mine_tablet">
+              <use xlink:href="spritemap.svg#sprite-mine-tablet"></use>
+            </svg>
+
+            <div class="sheme__group" data-js="scheme-map" data-type="mobile">
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_column sheme__point_surface">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point-default"></use>
+                </svg>
+                <button
+                  data-js-action="open-modal"
+                  data-name="return"
+                  class="sheme__point-button sheme__point-button_popup">
+                  На поверхность
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_lift" data-js="scheme-group" data-index="1">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="1"
+                  data-name="lift"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  подъемная машина
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_crate" data-js="scheme-group" data-index="2">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="2"
+                  data-name="crate"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  клеть
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_yard" data-js="scheme-group" data-index="3">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="3"
+                  data-name="yard"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  околоствольный двор
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_medical" data-js="scheme-group" data-index="4">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="4"
+                  data-name="medical"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  медпункт
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_conveyor" data-js="scheme-group" data-index="5">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="5"
+                  data-name="conveyor"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  конвейерная <br>лента
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_pdm" data-js="scheme-group" data-index="6">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="6"
+                  data-name="pdm"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  ПДМ
+                </button>
+              </div>
+              <!-- point end -->
+
+               <!-- point start -->
+               <div class="sheme__point sheme__point_drill" data-js="scheme-group" data-index="7">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="7"
+                  data-name="drill"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  буровая <br>установка
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_ural" data-js="scheme-group" data-index="8">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="8"
+                  data-name="ural"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  комбайн <br>урал
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_distribution sheme__point_column" data-js="scheme-group" data-index="9">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="9"
+                  data-name="distribution"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_sm sheme__point-button_popup">
+                  Распределительная <br>подстанция
+                </button>
+              </div>
+              <!-- point end -->
+
+              <!-- point start -->
+              <div class="sheme__point sheme__point_harvester sheme__point_column" data-js="scheme-group" data-index="10">
+                <svg class="sheme__point-ico">
+                  <use xlink:href="spritemap.svg#sprite-sheme-point"></use>
+                </svg>
+                <span class="sheme__point-pulse"></span>
+                <button
+                  data-index="10"
+                  data-name="harvester"
+                  data-js="scheme-point"
+                  class="sheme__point-button sheme__point-button_popup">
+                  Комбайн КП 330
+                </button>
+              </div>
+              <!-- point end -->
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="popup__content popup__content_center" data-modal="back">
+        <button type="button" class="popup__close" data-role="close-modal">
+          <svg class="popup__cross">
+            <use xlink:href="spritemap.svg#sprite-cross"></use>
+          </svg>
+        </button>
+
+        <div class="popup__wrap">
+          <div class="popup__title popup__title_offset">
+            Вы уверены, что хотите к карте?
+          </div>
+
+          <div class="popup__footer">
+            <button
+              type="button"
+              data-js="back-map"
+              class="button button_blue popup__button"
+            >
+              Да, вернуться к карте
+          </button>
+
+            <button
+              type="button"
+              class="button button_white popup__button"
+              data-role="close-modal"
+            >
+              Нет, остаться в шахте
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <button type="button" class="nav-btn" data-js-action="menu-toggle">
+    <span class="nav-btn__icon"></span>
+  </button>
+
+  <nav class="nav" data-js-action="menu-nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="https://gremgok.ru" class="nav__link">Главная</a>
+      </li>
+      <li class="nav__item">
+        <a href="https://gremgok.ru/novosti/" class="nav__link">Новости</a>
+      </li>
+      <li class="nav__item">
+        <a href="https://gremgok.ru/docs.html" class="nav__link">Документы</a>
+      </li>
+      <li class="nav__item">
+        <a href="https://gremgok.ru/kontaktyi.html" class="nav__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>
